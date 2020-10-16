@@ -1,0 +1,11 @@
+/* reset */
+@import "./reset.min.css";
+
+/* globals */
+@import "./header.css";
+@import "./section1__features.css";
+@import "./section2__high-level.css";
+@import "./footer.css";
+
+/* fonts */
+@import "./../font/stylesheet.css";

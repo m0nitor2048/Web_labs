@@ -1,0 +1,104 @@
+.section__features {
+    margin-top: 150px;
+    padding-bottom: 133px;
+    transition: ease 1s;
+}
+.section__features:hover .features__title h2 {
+    text-decoration: underline;
+    transition: ease 1s;
+}
+
+.features__title {
+    text-align: center;
+}
+
+.features__title h2 {
+    margin-bottom: 50px;
+}
+
+
+.features__title p {
+    line-height: 1.8;
+}
+
+.features__cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.features__box {
+    display: block;
+    box-sizing: border-box;
+    width: 49%;
+    height: 360px;
+    margin-top: 50px;
+    padding: 55px 50px 0 280px;
+
+}
+
+.features__box p {
+    margin-top: 30px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.features__search-data {
+    background: url(../img/features/1/Group_72.svg) no-repeat top left;
+}
+
+.features__hours-access {
+    background: url(../img/features/2/Group_71.svg) no-repeat top right;
+}
+
+.features__print-out {
+    background: url(../img/features/3/Group_69.svg) no-repeat top left;
+}
+
+.features__security-code {
+    background: url(../img/features/4/Group_68.svg) top right no-repeat;
+}
+
+.features__box button {
+    background: transparent;
+    margin-top: 50px;
+    padding: 5px;
+}
+.features__box button:hover {
+    box-sizing: border-box;
+    border: 1px solid black;
+}
+.features__box button a {
+    color: #212353;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+
+@media screen and (max-width: 1200px) {
+    body {
+        overflow-x: hidden;
+    }
+    .features__cards {
+        flex-flow: row wrap;
+        justify-content: space-around;
+    }
+    .features__box {
+        box-sizing: border-box;
+        min-width: 500px;
+        width: 50%;
+        padding-left: 25%;
+        padding-right: 1%;
+        margin: 50px auto 0 auto;
+    }
+}
+@media screen and (max-width: 500px) {
+    .features__box {
+        background: rgba(183, 172, 172, 0.5);
+        border-radius: 50px;
+        margin-right: 20%;
+        margin-left: 20%;
+        padding-right: 20%;
+        width: 80%;
+    }
+}
