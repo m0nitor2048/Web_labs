@@ -94,11 +94,20 @@
 }
 @media screen and (max-width: 500px) {
     .features__box {
-        background: rgba(183, 172, 172, 0.5);
+        box-sizing: border-box;
+        background: rgba(214, 197, 197, 0.2);
         border-radius: 50px;
         margin-right: 20%;
         margin-left: 20%;
         padding-right: 20%;
         width: 80%;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 400px) {
+    .features__box h3,p {
+        box-sizing: border-box;
+        width: 300px;
+        text-align: center;
     }
 }
