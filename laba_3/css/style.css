@@ -1,0 +1,47 @@
+.menu {
+    font-size: 18px;
+    background: grey;
+}
+
+.menu__my-stones {
+    background: red;
+}
+.navbar {
+    background-color: #F8F8F8;
+    border: 1px solid #DBDBDB;
+}
+.nav__my-stones {
+    background-color: #E0E0E0;
+}
+
+.manage__stones {
+    background-color: violet;
+}
+.content {
+    margin-top: 20px;
+}
+.stones {
+    background-color: tomato;
+}
+.stones div {
+    background-color: thistle;
+}
+.stones .box {
+    border: 1px solid #9E9E9E;
+    background-color: #fff;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+.box button {
+    width: 100px;
+    margin-bottom: 10px;
+}
+.active {
+    background-color: #E0E0E0;
+}
+.not_active {
+    background-color: #F8F8F8;
+}
+.nav__my-stones {
+    background-color: #F8F8F8;
+}
