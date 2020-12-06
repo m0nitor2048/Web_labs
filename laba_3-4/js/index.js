@@ -10,7 +10,7 @@ const removeButton = document.getElementById("remove_button");
 
 const itemsContainer = document.getElementById("items_container");
 
-let stones = [];
+let stones = []; 
 
 searchButton.addEventListener("click", (event) => {     // ? why need event here
     event.preventDefault();
@@ -60,6 +60,7 @@ removeButton.addEventListener("click", () => {
     console.log("13");
 
 });
+
 // function delete_row(e)
 // {
 //     e.parentNode.parentNode.parentNode.removeChild(e.parentNode.parentNode);
@@ -140,4 +141,4 @@ const itemTemplate = ({id, title, desc, price, carats}) => `
 //       "afterbegin",
 //       itemTemplate({ id, title, description })
 //     );
-renderItemsList(stones);
+// renderItemsList(stones);
