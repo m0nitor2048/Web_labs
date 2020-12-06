@@ -196,7 +196,7 @@ function errData(error) {
 
 // --------- Edit Data ---------
 
-async function editCard(id) {
+function editCard(id) {
 
     if (validation() === true){} else {return null}
 
