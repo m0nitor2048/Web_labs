@@ -173,7 +173,7 @@ function getData(data) {
     itemsContainer.innerHTML = "";
     keys.forEach((stone, index) => {
         let key = keys[index];
-        console.log(key + "22222222");
+        console.log(key + " 22222222");
         stone = stones[key];
         visibleStones.push(stone)
         //console.log("##" + visibleStones)
@@ -196,7 +196,7 @@ function errData(error) {
 
 // --------- Edit Data ---------
 
-function editCard(id) {
+async function editCard(id) {
 
     if (validation() === true){} else {return null}
 
@@ -204,22 +204,26 @@ function editCard(id) {
         .then(function(snapshot) {
             snapshot.forEach(function(childSnapshot) {
                 let key = childSnapshot.key;
-                //console.log(snapshot.val()[key]);
+                console.log("123467 " + snapshot.val()[key]);
                 //let refVal = snapshot.val()[key]
+
                 if (snapshot.val()[key].id === id){
-                    // console.log(snapshot.val()[key].id);
-                    // console.log(refVal.title);
+                    //console.log(snapshot.val()[key].id);
+                    //console.log(refVal.title);
+                    console.log(" 1111111 " + titleInput.value);
                     database.ref("stones/" + key).update({
                         title: titleInput.value,
                         desc: descriptionInput.value,
                         price: priceInput.value,
                         carats: caratsInput.value
                     });
+                    clearInputs()
                 }
             });
         });
-    clearInputs()
+    //clearInputs()
 }
+
 // --------- Remove Data ---------
 const removeCard = (id) => {
     stonesDB.once("value")
@@ -228,7 +232,7 @@ const removeCard = (id) => {
             snapshot.forEach(function(childSnapshot) {
                 let key = childSnapshot.key;
                 if (snapshot.val()[key].id === id){
-                    database.ref("stones/" + key).set(null);
+                    database.ref("stones/" + key).remove();
                 }
             });
         })
