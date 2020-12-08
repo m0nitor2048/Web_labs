@@ -15,17 +15,19 @@
 }
 
 .manage__stones {
-    background-color: violet;
+    background-color: rgba(206, 194, 206, 0.164);
+    border-radius: 20px;
 }
 .content {
     margin-top: 20px;
 }
 .stones {
-    background-color: tomato;
+    background-color: rgba(176, 193, 240, 0.37);
+    border-radius: 20px;
 }
-.stones div {
+/* .stones div {
     background-color: thistle;
-}
+} */
 .stones .box {
     border: 1px solid #9E9E9E;
     background-color: #fff;
@@ -44,4 +46,18 @@
 }
 .nav__my-stones {
     background-color: #F8F8F8;
+}
+
+.test {
+    display: none;
+}
+
+#box-image {
+    width: 100%;
+}
+
+.alert {
+    margin: 0 auto;
+    width: 80%;
+    border-radius: 10px;
 }
