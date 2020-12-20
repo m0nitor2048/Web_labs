@@ -1,258 +1,241 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Bootstrap 5 -->
     <link
-            rel="stylesheet"
-            href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
-            integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I"
-            crossorigin="anonymous"
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+      integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I"
+      crossorigin="anonymous"
     />
     <script
-            src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
-            integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
-            crossorigin="anonymous"
+      src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+      integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+      crossorigin="anonymous"
     ></script>
 
     <!-- UUID library -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.2.0/uuid.min.js"></script>
 
-    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/style.css" />
     <title>Precious stones</title>
-<!--    <script src="https://www.gstatic.com/firebasejs/3.5.2/firebase.js"></script>-->
-<!--    <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase.js"></script>-->
-
-</head>
-<body class="bg-light">
-
-
-<!-- <div class="alert alert-warning alert-dismissible fade show" role="alert">
+    <!--    <script src="https://www.gstatic.com/firebasejs/3.5.2/firebase.js"></script>-->
+    <!--    <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase.js"></script>-->
+  </head>
+  <body class="bg-light">
+    <!-- <div class="alert alert-warning alert-dismissible fade show" role="alert">
   <strong>Holy guacamole!</strong> You should check in on some of those fields below.
   <button type="button" class="close" data-dismiss="alert" aria-label="Close">
     <span aria-hidden="true">&times;</span>
   </button>
 </div> -->
 
-
-<div class="container">
-    <nav class="navbar navbar-expand-lg navbar-light p-0">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light p-0">
         <div class="container-fluid">
-            <a class="navbar-brand mb-0 h1" href="#"
-            >Precious <br/>
-                Stones
-            </a>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
-                    <li class="nav-item nav__my-stones ml-4">
-                        <a
-                                class="nav__my-stones_item nav-link active"
-                                aria-current="page"
-                                href="#"
-                        >My Stones</a
-                        >
-                    </li>
-                    <li class="nav-item ml-4">
-                        <a class="nav-link" href="example/index.html">Example</a>
-                    </li>
-                </ul>
-                <form class="d-flex">
-                    <input
-                            id="search_input"
-                            class="form-control mr-4 mt-0 mb-0"
-                            type="search"
-                            placeholder="Search"
-                            aria-label="Search"
-                    />
-                    <button
-                            id="search_button"
-                            class="btn btn-outline-primary mt-2 ml-2 pl-4 pr-4"
-                            type="submit"
-                    >
-                        Search
-                    </button>
-                    <button
-                            id="cancel_search_button"
-                            class="btn btn-outline-danger mt-2 ml-4 pl-4 pr-4"
-                            type="button"
-                    >
-                        Clear
-                    </button>
-
-                </form>
-            </div>
-        </div>
-    </nav>
-
-    <div class="content row">
-
-
-        <div class="manage__stones col-lg-3">
-            <h3>Manage stones</h3>
-            <div class="form-check form-switch">
-                <input
-                        class="form-check-input"
-                        type="checkbox"
-                        id="flexSwitchCheckChecked"
-                />
-                <label class="form-check-label" for="flexSwitchCheckChecked"
-                >Sort by the most <br/>
-                    expensive stones</label
+          <a class="navbar-brand mb-0 h1" href="#"
+            >Precious <br />
+            Stones
+          </a>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+              <li class="nav-item nav__my-stones ml-4">
+                <a
+                  class="nav__my-stones_item nav-link active"
+                  aria-current="page"
+                  href="#"
+                  >My Stones</a
                 >
-            </div>
-            <hr/>
-            <div class="count__total text-center">
-                <p>Count total daily expences:</p>
-                <button
-                        id="count__button"
-                        type="button"
-                        class="btn btn-primary pl-5 pr-5 font-weight-bold"
-                >
-                    Count
-                </button>
-                <p>Total expences:</p>
-                <span id="total_expences"></span><span>$</span>
-            </div>
-
-            <!-- ********/ Creae Stone **********-->
-            <form id="create_form row justify-content-md-center" action="">
-                <div class="row justify-content-md-center">
-                    <!-- <div class="col col-lg-6">1 of 3</div> -->
-                    <div class="col-md-auto">
-                        <h1 class="mt-5 font-weight-bold">Create Stone</h1>
-                        <div class="title__box">
-                            <label for="add-title">Title</label>
-                            <input
-                                    class="form-control"
-                                    type="text"
-                                    id="add-title"
-                                    placeholder="Enter title"
-
-                                    minlength="1"
-                                    maxlength="30"
-                                    required
-                            />
-                        </div>
-
-                        <div class="description__box">
-                            <label for="add-description">Description</label>
-                            <input
-                                    class="form-control"
-                                    type="text"
-                                    id="add-description"
-                                    placeholder="..."
-                                    minlength="3"
-                                    maxlength="30"
-                                    required
-                            />
-                        </div>
-
-                        <div class="price__box">
-                            <label for="add-price" class="form-label">Price</label>
-                            <div class="input-group mb-3">
-                                <div class="input-group mb-3">
-                                    <span class="input-group-text">$</span>
-                                    <input
-                                            type="number"
-                                            min="0"
-                                            class="form-control"
-                                            id="add-price"
-                                            minlength="1"
-                                            maxlength="10"
-                                            placeholder="0"
-                                            required
-                                    />
-                                    <span class="input-group-text">.00</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="carats__box">
-                            <label for="add-carats" class="form-label"
-                            >Number of carats</label
-                            >
-                            <div class="input-group mb-3">
-                                <div class="input-group mb-3">
-                                    <span class="input-group-text">#</span>
-                                    <input
-                                            type="number"
-                                            min="0"
-                                            class="form-control"
-                                            aria-label="Amount (to the nearest dollar)"
-                                            id="add-carats"
-                                            required
-                                    />
-                                </div>
-                            </div>
-                        </div>
-
-                        <button id="create__button"
-                                type="submit"
-                                class="btn btn-primary btn-lg btn-block"
-                                >
-                            Create
-                        </button>
-                        <!-- <input class="btn btn-primary" type="submit" value="Submit" /> -->
-                    </div>
-                </div>
+              </li>
+              <li class="nav-item ml-4">
+                <a class="nav-link" href="example/index.html">Example</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input
+                id="search_input"
+                class="form-control mr-4 mt-0 mb-0"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button
+                id="search_button"
+                class="btn btn-outline-primary mt-2 ml-2 pl-4 pr-4"
+                type="submit"
+              >
+                Search
+              </button>
+              <button
+                id="cancel_search_button"
+                class="btn btn-outline-danger mt-2 ml-4 pl-4 pr-4"
+                type="button"
+              >
+                Clear
+              </button>
             </form>
+          </div>
+        </div>
+      </nav>
 
-            <!-- */ --------- -->
+      <div class="content row">
+        <div class="manage__stones col-lg-3">
+          <h3>Manage stones</h3>
+          <div class="form-check form-switch">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              id="flexSwitchCheckChecked"
+            />
+            <label class="form-check-label" for="flexSwitchCheckChecked"
+              >Sort by the most <br />
+              expensive stones</label
+            >
+          </div>
+          <hr />
+          <div class="count__total text-center">
+            <p>Count total daily expences:</p>
+            <button
+              onClick="calculateTotalCount()"
+              id="count__button"
+              type="button"
+              class="btn btn-primary pl-5 pr-5 font-weight-bold"
+            >
+              Count
+            </button>
+            <p>Total expences:</p>
+            <span id="total_expences"></span><span> $</span>
+          </div>
+
+          <!-- ********/ Creae Stone **********-->
+          <form id="create_form row justify-content-md-center" action="">
+            <div class="row justify-content-md-center">
+              <!-- <div class="col col-lg-6">1 of 3</div> -->
+              <div class="col-md-auto">
+                <h1 class="mt-5 font-weight-bold">Create Stone</h1>
+                <div class="title__box">
+                  <label for="add-title">Title</label>
+                  <input
+                    class="form-control"
+                    type="text"
+                    id="add-title"
+                    placeholder="Enter title"
+                    minlength="1"
+                    maxlength="30"
+                    required
+                  />
+                </div>
+
+                <div class="description__box">
+                  <label for="add-description">Description</label>
+                  <input
+                    class="form-control"
+                    type="text"
+                    id="add-description"
+                    placeholder="..."
+                    minlength="3"
+                    maxlength="30"
+                    required
+                  />
+                </div>
+
+                <div class="price__box">
+                  <label for="add-price" class="form-label">Price</label>
+                  <div class="input-group mb-3">
+                    <div class="input-group mb-3">
+                      <span class="input-group-text">$</span>
+                      <input
+                        type="number"
+                        min="0"
+                        class="form-control"
+                        id="add-price"
+                        minlength="1"
+                        maxlength="10"
+                        placeholder="0"
+                        required
+                      />
+                      <span class="input-group-text">.00</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="carats__box">
+                  <label for="add-carats" class="form-label"
+                    >Number of carats</label
+                  >
+                  <div class="input-group mb-3">
+                    <div class="input-group mb-3">
+                      <span class="input-group-text">#</span>
+                      <input
+                        type="number"
+                        min="0"
+                        class="form-control"
+                        aria-label="Amount (to the nearest dollar)"
+                        id="add-carats"
+                        required
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <button
+                  id="create__button"
+                  type="submit"
+                  class="btn btn-primary btn-lg btn-block"
+                >
+                  Create
+                </button>
+                <!-- <input class="btn btn-primary" type="submit" value="Submit" /> -->
+              </div>
+            </div>
+          </form>
         </div>
         <div id="stones__box" class="stones col-lg-9">
-
-
-            <div class="row m-2 text-center" id="items_container">
-
-                <!-- <div id="warning" class="alert alert-warning" role="alert">
+          <div class="row m-2 text-center" id="items_container">
+            <!-- <div id="warning" class="alert alert-warning" role="alert">
                 </div> -->
 
-
-<!--                <div class="col-4 test">-->
-<!--                    <div class="box">-->
-<!--                        <img src="img.jpg" alt="" id="box-image"/>-->
-<!--                        <h5>Name</h5>-->
-<!--                        <p>-->
-<!--                            Lorem ipsum dolor sit amet consectetur, adipisicing elit.-->
-<!--                            Earum, possimus?-->
-<!--                        </p>-->
-<!--                        <p>Price: 22$</p>-->
-<!--                        <p>Carats: 111</p>-->
-<!--                        <button id="edit_button" type="button" class="btn btn-info">Edit</button>-->
-<!--                        <button id="remove_button" type="button" class="btn btn-danger">Remove</button>-->
-<!--                    </div>-->
-<!--                </div>-->
-
-
-            </div>
+            <!--                <div class="col-4 test">-->
+            <!--                    <div class="box">-->
+            <!--                        <images src="images.jpg" alt="" id="box-images"/>-->
+            <!--                        <h5>Name</h5>-->
+            <!--                        <p>-->
+            <!--                            Lorem ipsum dolor sit amet consectetur, adipisicing elit.-->
+            <!--                            Earum, possimus?-->
+            <!--                        </p>-->
+            <!--                        <p>Price: 22$</p>-->
+            <!--                        <p>Carats: 111</p>-->
+            <!--                        <button id="edit_button" type="button" class="btn btn-info">Edit</button>-->
+            <!--                        <button id="remove_button" type="button" class="btn btn-danger">Remove</button>-->
+            <!--                    </div>-->
+            <!--                </div>-->
+          </div>
         </div>
+      </div>
     </div>
-</div>
 
-
-<!-- TODO: Add SDKs for Firebase products that you want to use
+    <!-- TODO: Add SDKs for Firebase products that you want to use
      https://firebase.google.com/docs/web/setup#available-libraries -->
-<!--<script src="https://www.gstatic.com/firebasejs/8.1.1/firebase.js"></script>-->
-<!--<script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-app.js"></script>-->
-<!--<script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-analytics.js"></script>-->
-<!--<script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-auth.js"></script>-->
-<!--<script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-database.js"></script>-->
+    <!--<script src="https://www.gstatic.com/firebasejs/8.1.1/firebase.js"></script>-->
+    <!--<script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-app.js"></script>-->
+    <!--<script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-analytics.js"></script>-->
+    <!--<script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-auth.js"></script>-->
+    <!--<script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-database.js"></script>-->
 
-<script src="https://www.gstatic.com/firebasejs/3.5.2/firebase.js"></script>
-<!--<script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>-->
+    <script src="https://www.gstatic.com/firebasejs/3.5.2/firebase.js"></script>
+    <!--<script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>-->
 
-<!--<script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-app.js"></script>-->
-<!--<script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-database.js"></script>-->
-<script>
-    console.log("gstatic/firebasejs/8.1.1: OK")
-</script>
+    <!--<script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-app.js"></script>-->
+    <!--<script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-database.js"></script>-->
+    <script>
+      console.log("gstatic/firebasejs/8.1.1: OK");
+    </script>
 
-<script src="js/app.js"></script>
+    <script src="js/app.js"></script>
 
-<!--<script type="module" src="js/app.js"></script>-->
-<!--<script type="module" src="js/index.js"></script>-->
-
-</body>
+    <!--<script type="module" src="js/app.js"></script>-->
+  </body>
 </html>

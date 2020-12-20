@@ -42,25 +42,11 @@ console.log(database);
 
 //*/ --------- Add Card & send data to firebase ---------
 createButton.addEventListener("click", (event) => {
-    // Prevents defoult page reload on submit
     event.preventDefault();
-
-    // const {title, description, price, carats} = values;
-    //const {title, description, price, carats} = getInputValues();
-
 
     addItem()
     clearInputs();
 });
-
-// const getInputValues = () => {
-//     return {
-//         title: titleInput.value,
-//         description: descriptionInput.value,
-//         price: priceInput.value,
-//         carats: caratsInput.value
-//     }
-// }
 
 const clearInputs = () => {
     titleInput.value = "";
@@ -99,14 +85,11 @@ const addItem = (title=titleInput.value, desc=descriptionInput.value,
         console.log("Good Push Data")
         stonesDB.push(newItem)
         //addItemToPage(newItem);
-    } else {
-        console.log("Bad Push Data")
-    }
+    } else {console.log("Bad Push Data")}
 }
 
 const getItemId = (id) => `item-${id}`;
-//const getEditBtnId = (id) => `${id}`;
-//const getRemoveBtnId = (id) => `RemoveBtn-${id}`;
+
 
 const addItemToPage = ({id, title, desc, price, carats}) => {
     itemsContainer.insertAdjacentHTML(  //додає в html розмітку
@@ -157,13 +140,12 @@ function loadFirebase(){
 }
 
 function getData(data) {
-    let stones = data.val();
-
+    stones = data.val();
+    //console.log("7777777777777777")
     try {
         keys = Object.keys(data.val())
         //console.log("rrr" + data.val());
     } catch (error) {
-
         console.log("1 errData!");
         console.error(error);
         //console.log(data.val());
@@ -171,14 +153,12 @@ function getData(data) {
         return null
     }
     itemsContainer.innerHTML = "";
+    visibleStones = []
     keys.forEach((stone, index) => {
         let key = keys[index];
         console.log(key + " 22222222");
         stone = stones[key];
-        visibleStones.push(stone)
-        //console.log("##" + visibleStones)
         const my_data = {
-            //index: key,
             id: stone.id,
             title: stone.title,
             desc: stone.desc,
@@ -186,6 +166,9 @@ function getData(data) {
             carats: stone.carats,
         }
         addItemToPage(my_data)
+
+        visibleStones.push(my_data)
+        //foundStones.push(my_data)
         console.log(visibleStones)
     })}
 
@@ -238,43 +221,57 @@ const removeCard = (id) => {
         })
 }
 
+searchButton.addEventListener("click", (event) => {
+    event.preventDefault();
+    renderItemsList(searchingStonesObject(visibleStones));
+})
 
-/*
+const searchingStonesObject = (foundStones) => {
+    foundStones = visibleStones.filter(
+        visible => visible.title.search(searchInput.value) != -1
+    )
+    return foundStones
+}
+
+
+searchCancelButton.addEventListener("click", (event) => {
+    event.preventDefault();
+
+    searchInput.value = "";
+    renderItemsList(visibleStones);
+});
+
+const renderItemsList = (items) => {
+    itemsContainer.innerHTML = "";
+    items.forEach(element => {
+        addItemToPage(element)
+    })
+}
+
 // --------- sorting by price ---------
 document.getElementById('flexSwitchCheckChecked').onclick = function() {
-    var selected = document.querySelector('input[type=checkbox]');
+    let selected = document.querySelector('input[type=checkbox]');
     // console.log(selected.checked);
     // alert(selected.value);
     if (selected.checked === true) {
         console.log("sort on");
-        let sortedArray = stones.slice();
-        const sorted = sortedArray.sort((a, b) => (+a.price > +b.price) ? 1 : -1)
+
+        let stonesObject = searchingStonesObject(visibleStones).slice();
+        let sorted = stonesObject.sort((a, b) => (+a.price > +b.price) ? 1 : -1)
         //console.log(sorted);
         renderItemsList(sorted);
 
-    } else if (selected.checked === false){
+    } else {
         console.log("sort off")
-        //console.log(stones);
-        renderItemsList(stones);
-    } else { alert("WTF -_-") }
-
+        renderItemsList(searchingStonesObject(visibleStones));
+    }
 }
 
+//*/ --------- total Count Button ---------
 
-function readData(data) {
-    let stones = data.val();
-    keys = Object.keys(data.val());
-    keys.forEach((stone, index) => {
-        key = keys[index];
-        stone = medicines[key];
-        console.log(stone.price);
-        listChemical.push(medicine);
-    });
-
+const calculateTotalCount = () => {
+    let stones = searchingStonesObject(visibleStones)
+    let credits = stones.map(stones => parseInt(stones.price));
+    let total_expences = document.getElementById("total_expences")
+    total_expences.innerHTML = credits.reduce((total, amount) => parseInt(total) + parseInt(amount));
 }
-function loadFirebaseToSort(){
-    var ref = database.ref("chemicals");
-    ref.on("value", readData, errData);
-
-}
-*/
