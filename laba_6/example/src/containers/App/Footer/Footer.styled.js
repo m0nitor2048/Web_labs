@@ -9,7 +9,7 @@ export const Wrapper = styled.div`
     margin-top: 36px;
     text-align: center;
     p { 
-        color: 8E8E93;
+        color: #8E8E93;
         text-align: center;
         font-weight: 200;
     }

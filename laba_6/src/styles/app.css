@@ -20,6 +20,12 @@ font-family: 'Open Sans', sans-serif;
 
 @import "normalize.css";
 @import "components_styles/header.css";
+@import "components_styles/footer.css";
+
+@import "components_styles/elements_styles/TitleStyles.css";
+@import "components_styles/elements_styles/BlogCardItemStyles.css";
+@import "components_styles/elements_styles/ClientsCardItemsStyles.css";
+
 
 *, *::before, *::after {
     -webkit-box-sizing: border-box;
@@ -48,19 +54,23 @@ p {
     display: block;
     margin-block-start: 1em;
     margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
     margin-top: 0;
     margin-bottom: 1rem;
+}
+
+html {
+    font-size: 16px;
 }
 
 body {
     font-family: "Spectral", serif;
     line-height: 1.8;
     background: #fff;
-    font-size: 16px;
     font-weight: 300;
     color: gray;
+    font-size: 16px;
 }
 .img {
     background-size: cover;
@@ -71,4 +81,25 @@ body {
 .btn:hover, .btn:active, .btn:focus {
     outline: none;
     text-decoration: none;
+}
+
+.container_margin {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.heading__section {
+
+}
+.subheading {
+    margin-bottom: 0;
+    color: #b7472a;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: italic;
+}
+.heading__section h2 {
+    font-size: 40px;
+    font-weight: 700;
+
 }
