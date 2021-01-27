@@ -91,8 +91,8 @@ header {
 .nav__menu_middle a {
     font-size: 16px;
     font-weight: 300;
-    padding: 1.5rem 20px;
-    color: white;
+    padding: 5px 10px;
+    color: rgba(255, 255, 255, 0.5);
 }
 
 .menu__item, .menu__item a {
@@ -101,7 +101,8 @@ header {
 }
 
 .nav__menu_middle a:hover {
-    color: #a23f25 !important;
+    color: #a23f25;
+    /*text-decoration: none;*/
 }
 
 .menu__item:last-child a {
@@ -173,45 +174,7 @@ header {
     /*color: black;*/
 }
 
-/* -- container advantages */
 
-.container__advantages {
-    /*margin-bottom: 50px;*/
-}
-
-.advantages__card {
-    color: #fff;
-    padding: 30px;
-}
-
-.advantages__card_text h2 {
-    color: white;
-    font-weight: 500;
-    font-size: 18px;
-    text-transform: uppercase;
-    margin-bottom: 0.5rem;
-
-}
-
-.advantages__card_text p {
-    color: rgba(255, 255, 255, 0.8);
-    font-size: 16px;
-    margin-bottom: 1rem;
-}
-
-.advantages__card_img {
-    width: 60px;
-    text-align: center;
-    flex-grow: 0;
-    margin-right: 20px;
-}
-/*.advantages__card_img svg {*/
-.advantages__card_img {
-    fill: white;
-    stroke: white;
-    width: 60px;
-    height: 92px;
-}
 
 /* -- container about -- */
 
@@ -449,11 +412,13 @@ header {
     border-radius: 5px;
     background-color: #b7472a;
     width: 325px;
+    display: block;
 }
 
 .view-all-products:hover {
     background-color: #b7472a;
     color: #fff;
+
 }
 
 .product-1 {
@@ -536,49 +501,4 @@ header {
 
 
 /* -- container__blog -- */
-
-
-
-/* -- section__counter --*/
-.section__counter {
-
-}
-
-.section__counter strong {
-    font-weight: 500;
-    font-size: 40px;
-    color: #b7472a;
-    font-style: italic;
-}
-
-.section__counter span {
-    display: block;
-    font-size: 16px;
-    font-weight: 500;
-    color: rgba(0, 0, 0, 0.8);
-    line-height: 1.2;
-    margin-bottom: 0;
-    text-transform: uppercase;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

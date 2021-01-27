@@ -3,7 +3,7 @@ import {Container} from "react-bootstrap";
 
 function HeaderContent(props) {
     return (
-        <Container>
+        <Container className="header_bg">
             <div className="title__box">
                 <h1 className="title">Good <span>Drink</span> for Good <br/><span>Moments</span></h1>
                 <button className="title__button" type="button" onClick={console.log("OK")}>
@@ -14,7 +14,6 @@ function HeaderContent(props) {
                     Read more
                 </button>
             </div>
-
         </Container>
     );
 }

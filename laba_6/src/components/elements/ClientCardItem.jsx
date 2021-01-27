@@ -6,10 +6,7 @@ import {FaQuoteLeft} from "react-icons/all";
 const ClientCardItem = ({text, clientName, clientPosition, imageSrc}) => (
 
         <Col className="client__box">
-
-
                 <div className="quote text-center"><FaQuoteLeft/></div>
-
                 <p className="client__text">{text}</p>
                 <div className="client__bio d-flex align-items-center">
                     <div className="person__img_box img " style={{backgroundImage: `url(${imageSrc})`}}/>
@@ -18,10 +15,7 @@ const ClientCardItem = ({text, clientName, clientPosition, imageSrc}) => (
                         <span className="client__position">{clientPosition}</span>
                     </div>
                 </div>
-
         </Col>
-
-
 )
 
 

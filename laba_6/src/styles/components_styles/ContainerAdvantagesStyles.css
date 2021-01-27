@@ -1,0 +1,31 @@
+/* -- container advantages */
+
+.container__advantages {
+    background-color: #b7472a;
+}
+
+.advantages__card {
+    padding: 30px;
+}
+
+.advantages__card_img {
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    flex-grow: 0;
+    margin-right: 20px;
+}
+
+.advantages__card_text h2 {
+    color: white;
+    font-weight: 500;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+}
+
+.advantages__card_text p {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 16px;
+    margin-bottom: 1rem;
+}

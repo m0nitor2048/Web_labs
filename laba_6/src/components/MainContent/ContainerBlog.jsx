@@ -1,6 +1,5 @@
 import React from 'react';
-import {Col, Container, Row} from "react-bootstrap";
-import {FaRegCalendarAlt, HiArrowNarrowRight} from "react-icons/all";
+import {Container, Row} from "react-bootstrap";
 import blog_img_1 from '../../images/blog/image_1.jpg';
 import blog_img_2 from '../../images/blog/image_2.jpg';
 import blog_img_3 from '../../images/blog/image_3.jpg';
@@ -59,13 +58,11 @@ function ContainerBlog(props) {
                         description={description}
                         imageSrc={image}
                         url={url}
-                        id={idx}
+                        key={idx}
                     />
                 ))}
             </Row>
         </Container>
-
-
     );
 }
 

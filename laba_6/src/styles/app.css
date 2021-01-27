@@ -1,17 +1,5 @@
-/*
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
-
-<style>*/
-/*@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');*/
-/*</style>
-
-font-family: 'Open Sans', sans-serif;
-*/
-
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,\
     wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Spectral:ital,\
     wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 
@@ -21,6 +9,10 @@ font-family: 'Open Sans', sans-serif;
 @import "normalize.css";
 @import "components_styles/header.css";
 @import "components_styles/footer.css";
+@import "components_styles/cart.css";
+
+@import "components_styles/ContainerAdvantagesStyles.css";
+@import "components_styles/ContainerStatisticStyles.css";
 
 @import "components_styles/elements_styles/TitleStyles.css";
 @import "components_styles/elements_styles/BlogCardItemStyles.css";
@@ -89,7 +81,6 @@ body {
 }
 
 .heading__section {
-
 }
 .subheading {
     margin-bottom: 0;
@@ -102,4 +93,7 @@ body {
     font-size: 40px;
     font-weight: 700;
 
+}
+.selected {
+    color: #b7472a !important;
 }

@@ -42,7 +42,7 @@ const data = [
 function ContainerClients(props) {
     return (
         <div className="container__clients">
-            <div className="overlay"></div>
+            <div className="overlay"/>
             <Container>
                 <Row>
                     <Col className="heading__section text-center">
@@ -57,7 +57,7 @@ function ContainerClients(props) {
                             clientName={clientName}
                             clientPosition={clientPosition}
                             imageSrc={image}
-                            id={idx}
+                            key={idx}
                         />
                     ))}
                 </Row>

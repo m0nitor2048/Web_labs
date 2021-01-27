@@ -1,9 +1,10 @@
 import React from 'react';
 
 import HeaderTopBar from "./HeaderTopBar";
-import HeaderMenu from "./HeaderMenu";
+import HeaderMenuNav from "./HeaderMenuNav";
 import HeaderContent from "./HeaderContent";
 import {Router} from "react-router";
+
 
 
 function Header() {
@@ -11,9 +12,8 @@ function Header() {
 
         <header className="header_bg">
           <HeaderTopBar/>
-          <HeaderMenu/>
+          <HeaderMenuNav/>
           <HeaderContent/>
-
         </header>
 
 

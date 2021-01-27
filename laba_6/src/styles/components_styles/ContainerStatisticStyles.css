@@ -1,0 +1,21 @@
+/* -- ContainerStatistic --*/
+.section__counter {
+    margin: 50px auto;
+}
+
+.section__counter strong {
+    font-weight: 500;
+    font-size: 40px;
+    color: #b7472a;
+    font-style: italic;
+}
+
+.section__counter span {
+    display: block;
+    font-size: 16px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.8);
+    line-height: 1.2;
+    margin-bottom: 0;
+    text-transform: uppercase;
+}
