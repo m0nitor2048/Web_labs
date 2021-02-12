@@ -1,0 +1,225 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "type": "user",
+      "firstname": "John",
+      "lastname": "Steck",
+      "email": "m0nitor2048@gmail.com",
+      "phone": ""
+    }
+  ],
+  "advantages": [
+    {
+      "id": 1,
+      "title": "ONLINE SUPPORT 24/7",
+      "text": "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
+      "bgColor": "#b7472a",
+      "imageTitle": "CashbackSVG",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/web-labs-e7122.appspot.com/o/advantages%2Fcashback.svg?alt=media&token=2ccb9f03-378f-49c9-a38d-3cb88359965c"
+    },
+    {
+      "id": 2,
+      "title": "MONEY BACK GUARANTEE",
+      "text": "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
+      "bgColor": "#ab4227",
+      "imageTitle": "SupportSVG",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/web-labs-e7122.appspot.com/o/advantages%2Ffree_delivery.svg?alt=media&token=43af525b-f3a8-43d6-b635-a21a85a20cae"
+    },
+    {
+      "id": 3,
+      "title": "FREE SHIPPING & RETURN",
+      "text": "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
+      "bgColor": "#a23f25",
+      "imageTitle": "FreeDeliverySVG",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/web-labs-e7122.appspot.com/o/advantages%2Fsupport.svg?alt=media&token=b126e5e1-fb66-4656-8feb-efc76fea02bd"
+    }
+  ],
+  "blog": [
+    {
+      "id": 1,
+      "data": "10 September 2014",
+      "title": "The Recipe from a Winemaker’s Restaurent",
+      "description": "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/web-labs-e7122.appspot.com/o/blog%2Fimage_1.jpg?alt=media&token=ffb5a358-891a-45c5-bc68-89a2dda7d696",
+      "link": "#"
+    },
+    {
+      "id": 2,
+      "data": "23 April 2020",
+      "title": "The Recipe from a Winemaker’s Restaurent",
+      "description": "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/web-labs-e7122.appspot.com/o/blog%2Fimage_2.jpg?alt=media&token=b83a2985-ad1a-4d03-b311-2538d7efa8cd"
+
+    },
+    {
+      "id": 3,
+      "data": "20 November 2019",
+      "title": "The Recipe from a Winemaker’s Restaurent",
+      "description": "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/web-labs-e7122.appspot.com/o/blog%2Fimage_3.jpg?alt=media&token=15d20c1a-034f-4354-b23f-1384bd370959"
+    },
+    {
+      "id": 4,
+      "data": "23 May 2020",
+      "title": "The Recipe from a Winemaker’s Restaurent",
+      "description": "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/web-labs-e7122.appspot.com/o/blog%2Fimage_4.jpg?alt=media&token=07949cef-acad-4f20-9381-8a733a392f15",
+      "link": "#"
+    }
+  ],
+  "kind": [
+    {
+      "id": 1,
+      "name": "Brandy",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/web-labs-e7122.appspot.com/o/kind%2Fkind-1.jpg?alt=media&token=e2cebf47-ef84-476f-bc20-b658781d918f"
+    },
+    {
+      "id": 2,
+      "name": "Gin",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/web-labs-e7122.appspot.com/o/kind%2Fkind-2.jpg?alt=media&token=5c294fe3-da99-442d-9621-be4f1a595e1a"
+    },
+    {
+      "id": 3,
+      "name": "Rum",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/web-labs-e7122.appspot.com/o/kind%2Fkind-3.jpg?alt=media&token=4bda0b29-20c5-42db-8f29-12d0ab0bed31"
+    },
+    {
+      "id": 4,
+      "name": "Tequila",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/web-labs-e7122.appspot.com/o/kind%2Fkind-4.jpg?alt=media&token=cc1f9195-aeb7-4b54-ab9f-fc88e6cffdb4"
+    },
+    {
+      "id": 5,
+      "name": "Vodka",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/web-labs-e7122.appspot.com/o/kind%2Fkind-5.jpg?alt=media&token=905ed0be-3756-4ea1-bd2d-16144b66ad7c"
+    },
+    {
+      "id": 6,
+      "name": "Whiskey",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/web-labs-e7122.appspot.com/o/kind%2Fkind-6.jpg?alt=media&token=33aaec99-82c7-404c-a171-f6ab3cadae7c"
+    }
+  ],
+  "person": [
+    {
+      "id": 1,
+      "text": "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
+      "clientName": "Roger Scott",
+      "clientPosition": "Marketing Manager",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/web-labs-e7122.appspot.com/o/person%2Fperson-1.jpg?alt=media&token=791d8c4e-c255-4108-af7f-8b0271272f4c"
+    },
+    {
+      "id": 2,
+      "text": "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
+      "clientName": "Roger Scott",
+      "clientPosition": "Marketing Manager",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/web-labs-e7122.appspot.com/o/person%2Fperson-2.jpg?alt=media&token=5761914f-98fb-4c7b-b336-126eab5e35b9"
+    },
+    {
+      "id": 3,
+      "text": "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
+      "clientName": "Roger Scott",
+      "clientPosition": "Marketing Manager",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/web-labs-e7122.appspot.com/o/person%2Fperson-3.jpg?alt=media&token=e8fa9e80-23c8-4ffc-8c06-b2ff44f3fd2c"
+    },
+    {
+      "id": 4,
+      "text": "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
+      "clientName": "Roger Scott",
+      "clientPosition": "Marketing Manager",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/web-labs-e7122.appspot.com/o/person%2Fperson-4.jpg?alt=media&token=e430f724-5ae2-4969-a618-1de57fad9df7"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "category": "Brandy",
+      "name": "Bacardi 151",
+      "image": "https://firebasestorage.googleapis.com/v0/b/web-labs-e7122.appspot.com/o/products%2Fprod-1.jpg?alt=media&token=b9eafabb-91cb-4372-9c40-1fd50c82316b",
+      "price": "49.00",
+      "oldPrice": "69.00"
+    },
+    {
+      "id": 2,
+      "category": "Gin",
+      "name": "Jim Beam Kentucky Straight",
+      "image": "https://firebasestorage.googleapis.com/v0/b/web-labs-e7122.appspot.com/o/products%2Fprod-2.jpg?alt=media&token=d3173b07-0635-4123-bc1a-ca2a0a64d9d2",
+      "price": "49.00"
+    },
+    {
+      "id": 3,
+      "category": "Rum",
+      "name": "Citadelle",
+      "image": "https://firebasestorage.googleapis.com/v0/b/web-labs-e7122.appspot.com/o/products%2Fprod-3.jpg?alt=media&token=fb24fae8-951e-4fb2-a80c-3f6cebf73a07",
+      "price": "49.00"
+    },
+    {
+      "id": 4,
+      "category": "Rum",
+      "name": "The Glenlivet",
+      "image": "https://firebasestorage.googleapis.com/v0/b/web-labs-e7122.appspot.com/o/products%2Fprod-4.jpg?alt=media&token=5710ce63-8684-4def-93dd-5bf65771d5e2",
+      "price": "49.00"
+    },
+    {
+      "id": 5,
+      "category": "Whiskey",
+      "name": "Black Label",
+      "image": "https://firebasestorage.googleapis.com/v0/b/web-labs-e7122.appspot.com/o/products%2Fprod-5.jpg?alt=media&token=c2a3517b-3300-4e7e-bc7a-65388a5eb04e",
+      "price": "69.00"
+    },
+    {
+      "id": 6,
+      "category": "Tequila",
+      "name": "Macallan",
+      "image": "https://firebasestorage.googleapis.com/v0/b/web-labs-e7122.appspot.com/o/products%2Fprod-6.jpg?alt=media&token=6f380a7a-9499-49eb-9e77-9fa6b00c986e",
+      "price": "69.00"
+    },
+    {
+      "id": 7,
+      "category": "Vodka",
+      "name": "Old Monk",
+      "image": "https://firebasestorage.googleapis.com/v0/b/web-labs-e7122.appspot.com/o/products%2Fprod-7.jpg?alt=media&token=fc22dfce-e552-40a1-9d84-946a877bfd24",
+      "price": "69.00"
+    },
+    {
+      "id": 8,
+      "category": "Whiskey",
+      "name": "Jameson Irish Whiskey",
+      "image": "https://firebasestorage.googleapis.com/v0/b/web-labs-e7122.appspot.com/o/products%2Fprod-8.jpg?alt=media&token=df9e69df-3773-4752-a6fb-041fe024d9db",
+      "price": "69.00"
+    },
+    {
+      "id": 9,
+      "category": "Vodka",
+      "name": "Old Monk",
+      "image": "https://firebasestorage.googleapis.com/v0/b/web-labs-e7122.appspot.com/o/products%2Fprod-9.jpg?alt=media&token=155e5387-bcec-41d6-baf1-bd2e56330370",
+      "price": "69.00"
+    },
+    {
+      "id": 10,
+      "category": "Vodka",
+      "name": "Old Monk",
+      "image": "https://firebasestorage.googleapis.com/v0/b/web-labs-e7122.appspot.com/o/products%2Fprod-10.jpg?alt=media&token=c1556c84-33d7-4763-b023-63be30deafed",
+      "price": "69.00"
+    },
+    {
+      "id": 11,
+      "category": "Vodka",
+      "name": "Old Monk",
+      "image": "https://firebasestorage.googleapis.com/v0/b/web-labs-e7122.appspot.com/o/products%2Fprod-11.jpg?alt=media&token=68241a58-598e-4759-963b-9d6e4513ae0e",
+      "price": "69.00"
+    },
+    {
+      "id": 12,
+      "category": "Vodka",
+      "name": "Old Monk",
+      "image": "https://firebasestorage.googleapis.com/v0/b/web-labs-e7122.appspot.com/o/products%2Fprod-12.jpg?alt=media&token=0877670e-7b7f-4188-83c7-aeddba864f99",
+      "price": "69.00"
+    }
+  ],
+  "images": {
+    "about_section_img": "https://firebasestorage.googleapis.com/v0/b/web-labs-e7122.appspot.com/o/about.jpg?alt=media&token=982d4527-320b-4a83-abd6-4594118c1e3e",
+    "bg_4": "https://firebasestorage.googleapis.com/v0/b/web-labs-e7122.appspot.com/o/bg_4.jpg?alt=media&token=f53745dc-60e9-4f08-9d84-aeb463649d6e",
+    "logo": "https://firebasestorage.googleapis.com/v0/b/web-labs-e7122.appspot.com/o/logo.svg?alt=media&token=a88c6302-3957-4624-b21d-9c6cf015d03a"
+  }
+}

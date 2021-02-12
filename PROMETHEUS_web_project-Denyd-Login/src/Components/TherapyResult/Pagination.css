@@ -1,0 +1,33 @@
+.wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.files_list {
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+}
+
+.file_link {
+    text-decoration: none;
+}
+
+.table-wrapper {
+    width: 50%;
+    display: row;
+    margin-left: -4vw;
+    margin-top: 2vh;
+
+}
+
+.MuiPagination-ul {
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 15px;
+
+    width: 100%;
+    margin-top: -25px;
+}

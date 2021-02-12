@@ -1,0 +1,6 @@
+npm init
+npm install --save-dev firestore-export-import
+
+node uploadData.js
+
+

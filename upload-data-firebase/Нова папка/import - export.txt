@@ -1,0 +1,7 @@
+Export Data:
+npx -p node-firestore-import-export firestore-export -a AccountKey.json -b backup.json
+
+Import Data:
+npx -p node-firestore-import-export firestore-import -a AccountKey.json -b data.json
+
+https://www.youtube.com/watch?v=Xx0goSxpVqY
